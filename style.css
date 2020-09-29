@@ -10,11 +10,20 @@ body {
     position: relative;
 }
 
+#header {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
 #profile-container {
     width: 400px;
     border: 1px solid black;
     border-radius: 20px;
     overflow: hidden;
+    margin: 20px auto;
     background-color: white;
     margin: 20px auto;
 }
