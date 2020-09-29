@@ -5,13 +5,14 @@
 
 body {
     font-family: sans-serif;
-    background-color: aqua;
+    background-color: #00587a;
     height: 100vh;
     position: relative;
+    color: #e7e7de;
 }
 
 #header {
-    background-color: blueviolet;
+    background-color: #0f3057;
     color: white;
     text-align: center;
     height: 50px;
@@ -20,12 +21,14 @@ body {
 
 #profile-container {
     width: 400px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 20px;
     overflow: hidden;
-    margin: 20px auto;
-    background-color: white;
-    margin: 20px auto;
+    background-color: #008891;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #profile-image {
@@ -41,15 +44,25 @@ body {
 
 #profile-container h2 {
     text-align: center;
-    margin: 10px 0;
+    margin: 1px 0;
 }
 
 #footer {
-    background-color: blueviolet;
+    background-color: #0f3057;
     /* height: 50px; */
     width: 100%;
     line-height: 50px;
     text-align: center;
     position: absolute;
     bottom: 0;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #profile-container {
+        width: 300px;
+    }
+    #profile-container img {
+        margin: 0;
+    }
 }
